@@ -1,0 +1,12 @@
+/bin/
+
+*.db
+*.swp
+*.exe
+*.o
+*.recommenders
+*.metadata
+*.classpath
+*.project
+*.class
+*.settings
