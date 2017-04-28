@@ -1,9 +1,7 @@
-import java.util.Scanner;
-
 /***
- * Complete QuickUnion @ cmabdullah
-➜  src git:(master) ✗ javac _3QuickUnionLazyApproach.java
-➜  src git:(master) ✗ java _3QuickUnionLazyApproach <tinyUF.txt
+* Complete QuickUnion @ cmabdullah
+➜  src git:(master) javac _3QuickUnionLazyApproach.java
+➜  src git:(master) java _3QuickUnionLazyApproach <tinyUF.txt
 Union :4 3
 Union :3 8
 Union :6 5
@@ -15,8 +13,8 @@ Union :7 2
 Union :6 1
 Connected :1 0
 Connected :6 7
-➜  src git:(master) ✗ 
- * */
+➜  src git:(master) 
+*/
 class QuickUnionUF{
 	private int[] id;
 	public QuickUnionUF(int N){
@@ -45,7 +43,7 @@ public class _3QuickUnionLazyApproach {
 	public static void main(String[] args){
 		
 	int N = StdIn.readInt();
-	QuickFindUF uf = new QuickFindUF(N);
+	QuickUnionUF uf = new QuickUnionUF(N);
 		while (!StdIn.isEmpty()){
 		int p = StdIn.readInt();
 		int q = StdIn.readInt();
@@ -58,5 +56,4 @@ public class _3QuickUnionLazyApproach {
 			}
 		}
 	}
-
 }
