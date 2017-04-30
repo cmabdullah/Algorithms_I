@@ -29,7 +29,7 @@ class LinkedQuOfS{
 		return item;
 	}
 }
-public class LinkedQueueOfStrings{
+public class _8LinkedQueueOfStrings{
 
 	public static void main(String[] args){
 		LinkedQuOfS queue = new LinkedQuOfS();
