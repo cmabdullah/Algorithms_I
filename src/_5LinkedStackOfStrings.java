@@ -1,6 +1,20 @@
 /**
-➜  src git:(master) ✗ javac _5ArrayStackOfStrings.java
-➜  src git:(master) ✗ java _5ArrayStackOfStrings  <tobe.txt
+➜  src git:(master) ✗ javac _5LinkedStackOfStrings.java
+➜  src git:(master) ✗ java _5LinkedStackOfStrings     
+d
+d
+g
+h
+t
+-
+Poped : t
+-
+Poped : h
+-
+Poped : g
+^Z
+[1]  + 6003 suspended  java _5LinkedStackOfStrings
+➜  src git:(master) ✗ java _5LinkedStackOfStrings < tobe.txt
 Poped : to
 Poped : be
 Poped : not
@@ -9,8 +23,6 @@ Poped : or
 Poped : be
 ➜  src git:(master) ✗ 
  * */
-
-
 class StackOfStringsm{
 	private Node first = null;
 	private class Node{
@@ -32,7 +44,7 @@ class StackOfStringsm{
 		return item;
 	}
 }
-public class _5ArrayStackOfStrings  {
+public class _5LinkedStackOfStrings  {
 
 	public static void main(String[] args) {
 		StackOfStringsm stack = new StackOfStringsm();
