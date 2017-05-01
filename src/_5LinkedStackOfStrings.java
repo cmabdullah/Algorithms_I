@@ -1,4 +1,7 @@
 /**
+ * @author @bdull@h Kh@n
+ * */
+/**
 ➜  src git:(master) ✗ javac _5LinkedStackOfStrings.java
 ➜  src git:(master) ✗ java _5LinkedStackOfStrings     
 d

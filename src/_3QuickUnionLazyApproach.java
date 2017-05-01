@@ -1,3 +1,6 @@
+/**
+ * @author @bdull@h Kh@n
+ * */
 /***
 * Complete QuickUnion @ cmabdullah
 ➜  src git:(master) javac _3QuickUnionLazyApproach.java

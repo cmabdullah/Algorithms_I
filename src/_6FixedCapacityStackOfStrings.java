@@ -1,4 +1,7 @@
 /**
+ * @author @bdull@h Kh@n
+ * */
+/**
 ➜  src git:(master) ✗ javac _6FixedCapacityStackOfStrings.java
 ➜  src git:(master) ✗ java _6FixedCapacityStackOfStrings < tobe.txt
 Poped : to

@@ -1,3 +1,6 @@
+/**
+ * @author @bdull@h Kh@n
+ * */
 class LinkedQuOfS{
 	private Node first, last;
 	private class Node{ 

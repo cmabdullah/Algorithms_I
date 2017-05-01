@@ -1,3 +1,6 @@
+/**
+ * @author @bdull@h Kh@n
+ * */
 /***
 * Complete quick fiend @ cmabdullah
 ➜  src git:(master) javac _2QuickFind.java

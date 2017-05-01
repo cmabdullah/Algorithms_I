@@ -1,3 +1,6 @@
+/**
+ * @author @bdull@h Kh@n
+ * */
 /***
  * http://algs4.cs.princeton.edu/15uf/WeightedQuickUnionUF.java.html
 * Complete _4QuickUnionWeighting @ cmabdullah

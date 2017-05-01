@@ -1,3 +1,6 @@
+/**
+ * @author @bdull@h Kh@n
+ * */
 class ResizingArraySOfS{
 	private String[] s;
 	private int N = 0;
