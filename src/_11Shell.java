@@ -25,12 +25,12 @@
  *  % java Shell < words3.txt
  *  all bad bed bug dad ... yes yet zoo    [ one string per line ]
  *
- *
  *************************************************************************/
-public class _11Shell {
+class Sl{
+	
 
 	// This class should not be instantiated.
-	private _11Shell() {
+	public Sl() {
 		
 	}
 /**
@@ -84,7 +84,7 @@ public class _11Shell {
 	}
 
 	// print array to standard output
-	private static void show(Comparable[] a) {
+	public static void show(Comparable[] a) {
 		for (int i = 0; i < a.length; i++) {
 			StdOut.println(a[i]);
 		}
@@ -93,9 +93,17 @@ public class _11Shell {
 	 * Reads in a sequence of strings from standard input; Shellsorts them; 
 	 * and prints them to standard output in ascending order. 
 	 */
+	
+	
+}
+
+
+public class _11Shell {
+
 	public static void main(String[] args) {
+		Sl obj = new Sl();
 		String[] a = StdIn.readAllStrings();
-		_11Shell.sort(a);
-		show(a);
+		obj.sort(a);
+		obj.show(a);
 	}
 }
