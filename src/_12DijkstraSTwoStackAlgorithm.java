@@ -1,5 +1,8 @@
 import java.util.*;
 /**
+ * @author @bdull@h Kh@n
+ * */
+/**
 *  A generic DijkstraS Two Stack Algorithm, implemented using a singly-linked list. modified by Cm
 */
 class StackD<Item>{

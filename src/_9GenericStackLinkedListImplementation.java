@@ -1,5 +1,8 @@
 import java.util.*;
 /**
+ * @author @bdull@h Kh@n
+ * */
+/**
 *  A generic stack, implemented using a singly-linked list.
 */
 class Stack<Item>{
