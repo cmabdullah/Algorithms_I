@@ -26,7 +26,7 @@
  *  all bad bed bug dad ... yes yet zoo    [ one string per line ]
  *
  *************************************************************************/
-class Sl{
+class Sl<Item>{
 	
 
 	// This class should not be instantiated.
@@ -101,7 +101,7 @@ class Sl{
 public class _11Shell {
 
 	public static void main(String[] args) {
-		Sl obj = new Sl();
+		Sl<String> obj = new Sl<String>();
 		String[] a = StdIn.readAllStrings();
 		obj.sort(a);
 		obj.show(a);
