@@ -1,10 +1,9 @@
 import java.util.NoSuchElementException;
 
 public class _20MaximumPriorityQueue<Key extends Comparable<Key>>{
-	/* 
-	 * Implementation of a Max-heap
-	 * Uses lgN amortized time	
-	 */
+
+	 //Implementation of a Max-heap, Uses lgN amortized time	
+
 	private Key[] pq;
 	private int N;
 

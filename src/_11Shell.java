@@ -5,14 +5,6 @@
  *  Data files:   http://algs4.cs.princeton.edu/21sort/tiny.txt
  *                http://algs4.cs.princeton.edu/21sort/words3.txt
  *   
- *  Sorts a sequence of strings from standard input using shellsort.
- *
- *  Uses increment sequence proposed by Sedgewick and Incerpi.
- *  The nth element of the sequence is the smallest integer >= 2.5^n
- *  that is relatively prime to all previous terms in the sequence.
- *  For example, incs[4] is 41 because 2.5^4 = 39.0625 and 41 is
- *  the next integer that is relatively prime to 3, 7, and 16.
- *   
  *  % more tiny.txt
  *  S O R T E X A M P L E
  *
@@ -33,10 +25,8 @@ class Sl<Item>{
 	public Sl() {
 		
 	}
-/**
- * Rearranges the array in ascending order, using the natural order.
- * @param a the array to be sorted
- */
+ 	//Rearranges the array in ascending order, using the natural order.
+
 	public static void sort(Comparable[] a) {
 		int N = a.length;
 
@@ -82,22 +72,13 @@ class Sl<Item>{
 			if (less(a[i], a[i-h])) return false;
 		return true;
 	}
-
 	// print array to standard output
 	public static void show(Comparable[] a) {
 		for (int i = 0; i < a.length; i++) {
 			StdOut.println(a[i]);
 		}
 	}
-	/**
-	 * Reads in a sequence of strings from standard input; Shellsorts them; 
-	 * and prints them to standard output in ascending order. 
-	 */
-	
-	
 }
-
-
 public class _11Shell {
 
 	public static void main(String[] args) {

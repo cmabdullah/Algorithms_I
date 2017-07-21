@@ -28,31 +28,20 @@ public class _11BagAPI<Item> implements Iterable<Item> {
 		private Item item;
 		private Node<Item> next;
 	}
-	/**
-	 * Initializes an empty bag.
-	 */
 	public _11BagAPI() {
 		first = null;
 		N = 0;
 	}
-	/**
-	 * Is this bag empty?
-	 * @return true if this bag is empty; false otherwise
-	 */
 	public boolean isEmpty() {
 		return first == null;
 	}
-	/**
-	 * Returns the number of items in this bag.
-	 * @return the number of items in this bag
-	 */
+
+	 //Returns the number of items in this bag.
 	public int size() {
 		return N;
 	}
-	/**
-	 * Adds the item to this bag.
-	 * @param item the item to add to this bag
-	 */
+	
+	//Adds the item to this bag.
 	public void add(Item item) {
 		Node<Item> oldfirst = first;
 		first = new Node<Item>();
@@ -60,10 +49,7 @@ public class _11BagAPI<Item> implements Iterable<Item> {
 		first.next = oldfirst;
 		N++;
 	}
-	/**
-	 * Returns an iterator that iterates over the items in the bag in arbitrary order.
-	 * @return an iterator that iterates over the items in the bag in arbitrary order
-	 */
+	//Returns an iterator that iterates over the items in the bag in arbitrary order.
 	public Iterator<Item> iterator()  {
 		return new ListIterator<Item>(first);  
 	}
@@ -88,9 +74,6 @@ public class _11BagAPI<Item> implements Iterable<Item> {
 			return item;
 		}
 	}
-	/**
-	 * Unit tests the <tt>Bag</tt> data type.
-	 */
 	public static void main(String[] args) {
 		_11BagAPI<String> bag = new _11BagAPI<String>();
 		while (!StdIn.isEmpty()) {

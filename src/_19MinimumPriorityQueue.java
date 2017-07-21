@@ -20,42 +20,34 @@ import java.util.Iterator;
 import java.util.NoSuchElementException;
 
 public class _19MinimumPriorityQueue<Key> implements Iterable<Key>{
-	private Key[] pq;                    // store items at indices 1 to N
-	private int N;                       // number of items on priority queue
+	private Key[] pq;					// store items at indices 1 to N
+	private int N;						// number of items on priority queue
 	private Comparator<Key> comparator;  // optional comparator
 
-	/**
-	 * Initializes an empty priority queue with the given initial capacity.
-	 * @param initCapacity the initial capacity of the priority queue
-	 */
+	//Initializes an empty priority queue with the given initial capacity.
+	//initCapacity the initial capacity of the priority queue
 	public _19MinimumPriorityQueue(int initCapacity){
 		pq = (Key[]) new Object[initCapacity + 1];
 		N = 0;
 	}
 
-	/**
-	 * Initializes an empty priority queue.
-	 */
-	public _19MinimumPriorityQueue(){
+	public _19MinimumPriorityQueue(){//Initializes an empty priority queue.
 		this(1);
 	}
 
-	/**
-	 * Initializes an empty priority queue with the given initial capacity,
-	 * using the given comparator.
-	 * @param initCapacity the initial capacity of the priority queue
-	 * @param comparator the order to use when comparing keys
-	 */
+	 //Initializes an empty priority queue with the given initial capacity, using the given comparator.
+	//initCapacity the initial capacity of the priority queue comparator the order to use when comparing keys
+
 	public _19MinimumPriorityQueue(int initCapacity, Comparator<Key> comparator){
 		this.comparator = comparator;
 		pq = (Key[]) new Object[initCapacity + 1];
 		N = 0;
 	}
 
-	/**
-	 * Initializes an empty priority queue using the given comparator.
-	 * @param comparator the order to use when comparing keys
-	 */
+
+	 //Initializes an empty priority queue using the given comparator.
+	 //param comparator the order to use when comparing keys
+
 	public _19MinimumPriorityQueue(Comparator<Key> comparator){
 		this(1, comparator);
 		}
@@ -63,7 +55,7 @@ public class _19MinimumPriorityQueue<Key> implements Iterable<Key>{
 	/**
 	 * Initializes a priority queue from the array of keys.
 	 * Takes time proportional to the number of keys, using sink-based heap construction.
-	 * @param keys the array of keys
+	 * keys the array of keys
 	 */
 	public _19MinimumPriorityQueue(Key[] keys){
 		N = keys.length;
@@ -77,7 +69,7 @@ public class _19MinimumPriorityQueue<Key> implements Iterable<Key>{
 
 	/**
 	 * Is the priority queue empty?
-	 * @return true if the priority queue is empty; false otherwise
+	 * true if the priority queue is empty; false otherwise
 	 */
 	public boolean isEmpty(){
 		return N == 0;
@@ -85,7 +77,7 @@ public class _19MinimumPriorityQueue<Key> implements Iterable<Key>{
 
 	/**
 	 * Returns the number of keys on the priority queue.
-	 * @return the number of keys on the priority queue
+	 * the number of keys on the priority queue
 	 */
 	public int size(){
 		return N;
@@ -93,8 +85,8 @@ public class _19MinimumPriorityQueue<Key> implements Iterable<Key>{
 
 	/**
 	 * Returns a smallest key on the priority queue.
-	 * @return a smallest key on the priority queue
-	 * @throws java.util.NoSuchElementException if priority queue is empty
+	 * return a smallest key on the priority queue
+	 * throws java.util.NoSuchElementException if priority queue is empty
 	 */
 	public Key min(){
 		if (isEmpty()) throw new NoSuchElementException("Priority queue underflow");
@@ -108,11 +100,7 @@ public class _19MinimumPriorityQueue<Key> implements Iterable<Key>{
 		for (int i = 1; i <= N; i++) temp[i] = pq[i];
 		pq = temp;
 	}
-
-	/**
-	 * Adds a new key to the priority queue.
-	 * @param x the key to add to the priority queue
-	 */
+	//Adds a new key to the priority queue. x the key to add to the priority queue
 	public void insert(Key x){
 		// double size of array if necessary
 		if (N == pq.length - 1) resize(2 * pq.length);
@@ -122,18 +110,13 @@ public class _19MinimumPriorityQueue<Key> implements Iterable<Key>{
 		swim(N);
 		assert isMinHeap();
 	}
-
-	/**
-	 * Removes and returns a smallest key on the priority queue.
-	 * @return a smallest key on the priority queue
-	 * @throws java.util.NoSuchElementException if the priority queue is empty
-	 */
+	//Removes and returns a smallest key on the priority queue.
 	public Key delMin(){
-		if (isEmpty()) throw new NoSuchElementException("Priority queue underflow");
+		if (isEmpty()) throw new NoSuchElementException("Priority queue underflow");//throws java.util.NoSuchElementException if the priority queue is empty
 		exch(1, N);
 		Key min = pq[N--];
 		sink(1);
-		pq[N+1] = null;         // avoid loitering and help with garbage collection
+		pq[N+1] = null;		// avoid loitering and help with garbage collection
 		if ((N > 0) && (N == (pq.length - 1) / 4)) resize(pq.length  / 2);
 		assert isMinHeap();
 		return min;
@@ -196,8 +179,8 @@ public class _19MinimumPriorityQueue<Key> implements Iterable<Key>{
 	/**
 	 * Returns an iterator that iterates over the keys on the priority queue
 	 * in ascending order.
-	 * The iterator doesn't implement <tt>remove()</tt> since it's optional.
-	 * @return an iterator that iterates over the keys in ascending order
+	 * The iterator doesn't implement remove() since it's optional.
+	 * return an iterator that iterates over the keys in ascending order
 	 */
 	public Iterator<Key> iterator(){
 		return new HeapIterator();
