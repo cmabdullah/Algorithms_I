@@ -19,7 +19,7 @@ Like most imperative languages JAVA has facilities for structured programming.
 * 13 MergeSort
 * 14 Merge Sort Borrom Up
 * 15 Quick Sort
-* 16 SelectionSort (upcomming)
+* 16 ~~SelectionSort (upcomming)~~
 * 17 Quick Sort 3way
 * 18 System Sort
 * 19 Minimum Priority Queue

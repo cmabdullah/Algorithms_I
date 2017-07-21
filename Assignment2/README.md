@@ -45,4 +45,4 @@ Corner cases. Throw a java.lang.NullPointerException if the client attempts to a
 
 
 ### ref·er·ence
- * [Percolation](coursera.cs.princeton.edu/algs4/assignments/queues.html) :D
+ * [Deques and Randomized Queues](http://coursera.cs.princeton.edu/algs4/assignments/queues.html) :D
