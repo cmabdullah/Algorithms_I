@@ -4,9 +4,6 @@ import edu.princeton.cs.algs4.StdOut;
 
 import java.util.ArrayList;
 
-/**
- * Created by CtheSky on 2016/9/16.
- */
 public class Solver {
     private class Node implements Comparable<Node> {
         private Board board;

@@ -1,8 +1,5 @@
 import java.util.ArrayList;
 
-/**
- * Created by CtheSky on 2016/9/16.
- */
 public class Board {
     private int n;
     private int[][] blocks;
