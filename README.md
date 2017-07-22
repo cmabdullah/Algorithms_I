@@ -1,5 +1,45 @@
 # Algorithms
-Like most imperative languages JAVA has facilities for structured programming.
+
+Installation
+------------
+Download the libraries for MAC and Linux (algs4.jar,stdlib.jar)
+for windows see this Documentation.
+
+The last stable release is available on  sudo and can be installed with `` sudo ``::
+
+
+    $ sudo wget http://algs4.cs.princeton.edu/code/algs4.jar
+    $ sudo wget http://algs4.cs.princeton.edu/code/stdlib.jar
+
+
+* Java wrapper scripts from javac-algs4 and java-algs4
+MAC
+    $ sudo wget http://algs4.cs.princeton.edu/mac/java-algs4
+    $ sudo wget http://algs4.cs.princeton.edu/mac/javac-algs4
+
+Linux
+	$ cd /usr/local
+	$ sudo mkdir algs4
+	$ sudo chmod 755 algs4
+	$ cd algs4
+	$ pwd
+	$ /usr/local/algs4
+	$ sudo wget http://algs4.cs.princeton.edu/code/algs4.jar
+	$ sudo wget http://algs4.cs.princeton.edu/code/stdlib.jar
+	$ sudo wget http://algs4.cs.princeton.edu/linux/javac-algs4
+	$ sudo wget http://algs4.cs.princeton.edu/linux/java-algs4
+	$ sudo chmod 755 javac-algs4 java-algs4
+	$ sudo mv javac-algs4 /usr/local/bin
+	$ sudo mv java-algs4 /usr/local/bin
+
+Documentation
+-------------
+
+
+* Documentation of Linux is available online: http://algs4.cs.princeton.edu/linux/
+* Documentation of Linux is available online: http://algs4.cs.princeton.edu/mac/
+* Documentation of Linux is available online: http://algs4.cs.princeton.edu/windows/
+
 
 ## Very Basic Algorithms that every computer programmer should know.
 
@@ -49,4 +89,4 @@ public static void main(String[] args){
 }
 ```
 
-[All Slide](https://researchweb.iiit.ac.in/~syed.akhtar/teaching/cpro16/lab8/problem_statements/RecursionPracticeQuestions-UG1.pdf)
+[All Slide](http://algs4.cs.princeton.edu/home/)
