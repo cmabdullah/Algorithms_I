@@ -3,7 +3,7 @@
 Installation <br />
 ------------
 Download the libraries for MAC and Linux (algs4.jar,stdlib.jar) <br />
-for windows see this Documentation.
+for **windows** see this [libraries](https://github.com/cmabdullah/Algorithms_I/tree/master/libraries)
 
 The last stable release is available on sudo and can be installed with `` sudo ``:: <br />
 
