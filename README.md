@@ -45,8 +45,8 @@ Documentation <br />
 
 
 * Documentation of Linux is available online: http://algs4.cs.princeton.edu/linux/
-* Documentation of Linux is available online: http://algs4.cs.princeton.edu/mac/
-* Documentation of Linux is available online: http://algs4.cs.princeton.edu/windows/
+* Documentation of MAC is available online: http://algs4.cs.princeton.edu/mac/
+* Documentation of Windows is available online: http://algs4.cs.princeton.edu/windows/
 
 
 ## Very Basic Algorithms that every computer programmer should know.
