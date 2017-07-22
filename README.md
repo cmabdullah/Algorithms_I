@@ -1,11 +1,11 @@
 # Algorithms
 
-Installation
+Installation <br />
 ------------
-Download the libraries for MAC and Linux (algs4.jar,stdlib.jar)
+Download the libraries for MAC and Linux (algs4.jar,stdlib.jar) <br />
 for windows see this Documentation.
 
-The last stable release is available on  sudo and can be installed with `` sudo ``::
+The last stable release is available on sudo and can be installed with `` sudo ``:: <br />
 
 
     $ sudo wget http://algs4.cs.princeton.edu/code/algs4.jar
@@ -13,11 +13,18 @@ The last stable release is available on  sudo and can be installed with `` sudo 
 
 
 * Java wrapper scripts from javac-algs4 and java-algs4
-MAC
+
+
+MAC <br />
+
+
     $ sudo wget http://algs4.cs.princeton.edu/mac/java-algs4
     $ sudo wget http://algs4.cs.princeton.edu/mac/javac-algs4
 
-Linux
+
+Linux <br />
+
+
 	$ cd /usr/local
 	$ sudo mkdir algs4
 	$ sudo chmod 755 algs4
@@ -32,7 +39,8 @@ Linux
 	$ sudo mv javac-algs4 /usr/local/bin
 	$ sudo mv java-algs4 /usr/local/bin
 
-Documentation
+
+Documentation <br />
 -------------
 
 
